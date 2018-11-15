@@ -1,6 +1,6 @@
 {
-  "name": "card-vis",
-  "version": "1.2.0",
+  "name": "react-with-threejs",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
