@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders matching snapshot 1`] = `
+<div
+  className="app"
+>
+  <h1>
+    It is working!
+  </h1>
+  <div
+    className="image"
+  >
+    <img
+      alt="LBA"
+      src="file-mock"
+      style={
+        Object {
+          "width": "240px",
+        }
+      }
+    />
+  </div>
+</div>
+`;
