@@ -37,10 +37,10 @@ class Vis extends Component {
   }
 
   handleResize = () => {
-    const w = this.mount.clientWidth
-    const h = this.mount.clientHeight
-    this.renderer.setSize(w, h)
-    this.camera.aspect = w / h
+    const width = this.mount.clientWidth
+    const height = this.mount.clientHeight
+    this.renderer.setSize(width, height)
+    this.camera.aspect = width / height
     this.camera.updateProjectionMatrix()
   }
 
