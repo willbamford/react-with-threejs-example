@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import * as THREE from 'three'
 
-class Vis extends Component {
+class VisWithClass extends Component {
   componentDidMount() {
     const width = this.mount.clientWidth
     const height = this.mount.clientHeight
@@ -78,4 +78,4 @@ class Vis extends Component {
   }
 }
 
-export default Vis
+export default VisWithClass

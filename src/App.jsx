@@ -1,24 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 
-// import Vis from './Vis'
-import VisWithHooks from './VisWithHooks'
+import Vis from './VisWithClass'
+// import Vis from './VisWithHooks'
 
-const App = () => {
-  const [isVisible, setVisible] = useState(false)
-
-  useEffect(
-    () => {
-      const timer = setInterval(() => {
-        setVisible(!isVisible)
-      }, 1000)
-      return () => {
-        clearInterval(timer)
-      }
-    },
-    [isVisible],
-  )
-
-  return <div className="app">{isVisible && <VisWithHooks />}</div>
-}
+const App = () => (
+  <div className="app">
+    <Vis />
+  </div>
+)
 
 export default App
