@@ -1,23 +1,24 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
-import Vis from './Vis'
+// import Vis from './Vis'
+import VisWithHooks from './VisWithHooks'
 
-// const waitFor = time =>
-//   new Promise(resolve => {
-//     setTimeout(() => {
-//       resolve(`Finished wait (${time}ms)`)
-//     }, time)
-//   })
+const App = () => {
+  const [isVisible, setVisible] = useState(false)
 
-// const wait = async () => {
-//   const result = await waitFor(1000)
-//   alert(result)
-// }
+  useEffect(
+    () => {
+      const timer = setInterval(() => {
+        setVisible(!isVisible)
+      }, 1000)
+      return () => {
+        clearInterval(timer)
+      }
+    },
+    [isVisible],
+  )
 
-const App = () => (
-  <div className="app">
-    <Vis />
-  </div>
-)
+  return <div className="app">{isVisible && <VisWithHooks />}</div>
+}
 
 export default App
