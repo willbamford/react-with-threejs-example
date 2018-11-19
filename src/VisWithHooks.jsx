@@ -59,6 +59,10 @@ const VisWithHooks = () => {
       stop()
       window.removeEventListener('resize', handleResize)
       mountRef.current.removeChild(renderer.domElement)
+
+      scene.remove(cube)
+      geometry.dispose()
+      material.dispose()
     }
   }, [])
 
