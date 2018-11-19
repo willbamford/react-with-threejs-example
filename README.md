@@ -6,4 +6,4 @@ Created in response to [this question](https://stackoverflow.com/questions/41248
 
 ## React Hooks Example
 
-Take a look at `VisWithHooks.jsx` for the same example implemented using [React Hooks](https://reactjs.org/docs/hooks-overview.html).
+Take a look at [`VisWithHooks.jsx`](src/VisWithHooks.jsx) for the same example implemented using [React Hooks](https://reactjs.org/docs/hooks-overview.html).
