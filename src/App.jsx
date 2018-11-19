@@ -1,18 +1,7 @@
 import React from 'react'
 
-import Vis from './Vis'
-
-// const waitFor = time =>
-//   new Promise(resolve => {
-//     setTimeout(() => {
-//       resolve(`Finished wait (${time}ms)`)
-//     }, time)
-//   })
-
-// const wait = async () => {
-//   const result = await waitFor(1000)
-//   alert(result)
-// }
+import Vis from './VisWithClass'
+// import Vis from './VisWithHooks'
 
 const App = () => (
   <div className="app">

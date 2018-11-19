@@ -70,8 +70,8 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.1.2",
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0",
+    "react": "16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2",
     "three": "^0.98.0"
   }
 }
